@@ -1,5 +1,8 @@
-import React from 'react'
+
+import React from "react";
 import styled from "styled-components";
+import { Link} from 'react-router-dom';
+
 
 
 const Container = styled.div`
@@ -52,9 +55,11 @@ const Button = styled.button`
 
 
 const Navbar = () => {
+//   const [isOpen, setOpen] = useState(false);
   return (
-      
+     
           <Container>
+            <div>
             <Wrapper>
                 <Left>
                     <Logo>GoldFitness</Logo>
@@ -65,11 +70,19 @@ const Navbar = () => {
                         <MenuItem>Contact</MenuItem>
                     </Menu>
                 </Left>
+                <Link to="/login">
+                    <Button>Login</Button>
+                </Link>
                 
-                <Button>Login</Button>
             </Wrapper>
+
+            </div>
+            
           
         </Container>
+
+
+          
 
       
         
