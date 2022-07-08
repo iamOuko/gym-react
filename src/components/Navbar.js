@@ -73,18 +73,13 @@ const Navbar = () => {
                 <Link to="/login">
                     <Button>Login</Button>
                 </Link>
-                
+            
             </Wrapper>
 
             </div>
             
           
-        </Container>
-
-
-          
-
-      
+        </Container>    
         
    
   )

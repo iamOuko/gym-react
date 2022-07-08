@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Link} from 'react-router-dom';
 import Arms from '../img/arms.jpg';
 
 const Container = styled.div`
@@ -108,7 +109,10 @@ const Landingpage = () => {
                    flexibility and overall health.
               </Description>
               <Info>
-                <Button>Sign Up</Button>
+                <Link to="/signup">
+                  <Button>Sign Up</Button>
+                </Link>
+                
                 <Contact>
                     <Phone>Call Us (254) 722-123-456</Phone>
                     <ContactText>For any question or concern</ContactText>
