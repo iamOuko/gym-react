@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom';
 
 function Login() {
   return (
@@ -15,11 +16,16 @@ function Login() {
             <i class="login__icon fas fa-lock"></i>
             <input type="password" class="login__input" placeholder="Password" />
           </div>
-          <button class="button login__submit">
-            <span class="button__text">Log In</span>
-            <i class="button__icon fas fa-chevron-right"></i>
-          </button>				
+          <Link to="/profile">
+            <button class="button login__submit">
+              <span class="button__text">Log In</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>	
+          </Link>
+          
+          			
         </form>
+       
         
       </div>
       <div class="screen__background">

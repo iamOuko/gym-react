@@ -21,6 +21,8 @@ function Record() {
                 <input type="date" className="form-control" id="customFile" />
             </div>
         </form>
+        <button type="button" class="btn btn-success mt-5">update</button>
+
     </div>
   )
 }

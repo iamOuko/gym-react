@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom';
 
 const Profile = () => {
   return (
@@ -46,7 +47,13 @@ const Profile = () => {
                     </label>
                 </div>
             </div>
-            
+            <br />
+            <button type="button" class="btn btn-success mt-5">update</button>
+            <br />
+            <Link to="/records">
+                
+                <button type="button" class="btn btn-primary mt-5">Health record</button>
+            </Link>
 
   
         </form>
